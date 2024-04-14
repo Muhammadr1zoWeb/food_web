@@ -1,0 +1,20 @@
+@import '../../assets/style/style.scss';
+
+.home__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    form{
+        border: 1px solid rgb(57, 60, 73);
+        border-radius: 8px;
+        padding: 14px;
+        background-color: $darkGray;
+        input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin-left: 20px;
+        }
+    }
+}

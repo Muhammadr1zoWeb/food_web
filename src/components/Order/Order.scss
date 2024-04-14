@@ -1,0 +1,95 @@
+@import '../../assets/style/style.scss';
+
+.order{
+    width: 35%;
+    padding: 24px;
+    background-color: $mainDark;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid $lightPunk;
+    padding: 14px;
+    color: $lightPunk;
+    width: 120px;
+    border-radius: 8px;
+    transition: all ease 0.6s;
+    margin-top: 20px;
+    &:hover{
+        background-color: $lightPunk;
+        color: white;
+    }
+}
+.order__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; 
+    margin-top: 24px;
+    span{
+        width: 30%;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.order__list{
+    width: 600px;
+    overflow-x: scroll;
+}
+.order__item{
+    color: white;
+    margin-top: 10px;
+    .item__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            display: block;
+            width: 45%;
+        }
+        img{
+            width: 45.34px;
+            height: 41.14px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .item__count{
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(57, 60, 73);
+            border-radius: 8px;
+            background-color: $darkGray;
+        }
+    }
+    .item__bot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        input{
+            background-color: transparent;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid rgb(57, 60, 73);
+            background-color: $darkGray;
+            width: 75%;
+            outline: none;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid $lightPunk;
+            padding: 14px;
+            color: $lightPunk;
+            border-radius: 8px;
+            transition: all ease 0.05s;
+            &:hover{
+                background-color: $lightPunk;
+                color: white;
+            }
+        }
+    }
+}

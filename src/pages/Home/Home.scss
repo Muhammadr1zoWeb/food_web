@@ -1,8 +1,57 @@
 @import '../../assets/style/style.scss';
 
 .home{
-    background-color: $darkBlue;
+    background: $darkBlue;
     color: white;
-    flex-grow: 1;
+    width: 93%;
     height: 100vh;
+    padding: 24px;
+    display: flex;
+}
+.home__inner{
+  width: 65%;
+}
+.home__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    height: 500px;
+    overflow-y: scroll;
+}
+    
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $lightPunk;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.home__item{
+    cursor: pointer;
+    background-color: $mainDark;
+    width: 192px;
+    height: 226px;
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 65px;
+    img{
+        width: 150px;
+       height: 150px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        margin-top: -60px;
+        border-radius: 50%;
+    }
 }
